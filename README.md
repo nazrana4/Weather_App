@@ -122,15 +122,6 @@ The server is hosted on Replit for convenience but can also be initialized local
 
 3. **UI/UX Enhancements**:
    - Add animations for loading states and transitions.
-   - Improve accessibility by adhering to WCAG standards.
-
-4. **Testing**:
-   - Write unit and integration tests for both frontend and backend.
-   - Use tools like Jest, React Testing Library, and Supertest.
-
-5. **Deployment**:
-   - Deploy the application to cloud platforms like AWS or Heroku.
-   - Implement CI/CD pipelines for automated deployment and testing.
 
 ---
 
