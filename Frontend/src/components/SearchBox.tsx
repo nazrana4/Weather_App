@@ -1,17 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import axios from "axios";
-import { ApiError } from "../interface";
 
 interface SearchBoxProps {
   value: string;
   onChange: (value: string) => void;
-  weatherData: any;
   setData: any;
   isLoading: boolean;
   setLoading: (value: (prev: boolean) => boolean) => void;
-  setError: (value: ApiError) => void;
+  setError: (value: any) => void;
   showSearchHistory: boolean;
-  setShowSearchHistory: (value: (prev: boolean) => boolean) => void;
+  setShowSearchHistory: (value: boolean) => void;
   addSearchHistory: (city: string) => void;
   removeSearchHistory: (city: string) => void;
   searchHistory: string[];
@@ -19,7 +17,7 @@ interface SearchBoxProps {
 
 async function fetchWeather(cityName: string) {
   const url = "http://localhost:3000/";
-  const response = { data: null, error: null };
+  const response: { data: any | null, error: { msg: string; status: number; } | null } = { data: null, error: null };
 
   if (!/^[a-zA-Z\s]*$/.test(cityName)) {
     response.error = { msg: "City name should be alphabets only", status: 400 };
@@ -43,7 +41,6 @@ async function fetchWeather(cityName: string) {
 export const SearchBox: React.FC<SearchBoxProps> = ({
   value,
   onChange,
-  weatherData,
   setData,
   isLoading,
   setLoading,

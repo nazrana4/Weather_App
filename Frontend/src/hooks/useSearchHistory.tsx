@@ -17,7 +17,7 @@ export const useSearchHistory = () => {
     const [searchHistory,setSearchHistory] = useState(fecthSearchHistory);
 
     function addSearchHistory(city: string) {
-        setSearchHistory((prevHistory) => {
+        setSearchHistory((prevHistory:any) => {
             // Prevent duplicates
             if (!prevHistory.includes(city)) {
                 const updatedHistory = [city, ...prevHistory].slice(0,5); // Add to the beginning of the array
@@ -29,8 +29,8 @@ export const useSearchHistory = () => {
     }
 
     function removeSearchHistory(city: string) {
-        setSearchHistory((prevHistory) => {
-            const updatedHistory = prevHistory.filter((item) => item !== city);
+        setSearchHistory((prevHistory:any) => {
+            const updatedHistory = prevHistory.filter((item:any) => item !== city);
             localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedHistory));
             return updatedHistory;
         });

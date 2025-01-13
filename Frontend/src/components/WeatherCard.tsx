@@ -26,25 +26,25 @@ export const WeatherCard: React.FC<WeatherCardProps> = ({ isLoading, data, error
                     <span className="font-bold">City Name:</span> {data.city}
                   </p>
                   <p>
-                    <span className="font-bold">Temperature:</span> {data.temperature}°C
+                    <span className="font-bold">Temperature:</span> {String(data.temperature)}°C
                   </p>
                   <p>
                     <span className="font-bold">Description:</span> {data.description}
                   </p>
                   <p>
-                    <span className="font-bold">Feels Like:</span> {data.feels_like}°C
+                    <span className="font-bold">Feels Like:</span> {String(data.feels_like)}°C
                   </p>
                   <p>
-                    <span className="font-bold">Min Temp:</span> {data.min_temp}°C
+                    <span className="font-bold">Min Temp:</span> {String(data.min_temp)}°C
                   </p>
                   <p>
-                    <span className="font-bold">Max Temp:</span> {data.max_temp}°C
+                    <span className="font-bold">Max Temp:</span> {String(data.max_temp)}°C
                   </p>
                   <p>
-                    <span className="font-bold">Humidity:</span> {data.humidity}%
+                    <span className="font-bold">Humidity:</span> {String(data.humidity)}%
                   </p>
                   <p>
-                    <span className="font-bold">Wind Speed:</span> {data.wind_speed} m/s
+                    <span className="font-bold">Wind Speed:</span> {String(data.wind_speed)} m/s
                   </p>
                   {data.rain && (
                     <p>
