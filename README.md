@@ -147,6 +147,6 @@ The server is hosted on Replit for convenience but can also be initialized local
 
 ---
 
-Also the link on the hosted frontend and backend are:
-Backend : https://replit.com/@NazranaBagwan/Weather-App-Server
-Frontend : https://gregarious-buttercream-f484c5.netlify.app/
+### Also the link on the hosted frontend and backend are:
+- Backend : https://replit.com/@NazranaBagwan/Weather-App-Server
+- Frontend : https://gregarious-buttercream-f484c5.netlify.app/
