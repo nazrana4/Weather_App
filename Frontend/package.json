@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://nazrana4.github.io/Weather_App/Frontend",
+  "homepage": "https://nazrana4.github.io/Weather_App/",
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
