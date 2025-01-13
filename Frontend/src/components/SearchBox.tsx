@@ -16,7 +16,7 @@ interface SearchBoxProps {
 }
 
 async function fetchWeather(cityName: string) {
-  const url = "https://2821a45d-7b63-41b5-b019-e0b5d7d55cb3-00-1h5jtkkhjbkvv.pike.replit.dev/";
+  const url = "http://localhost:3000/";
   const response: { data: any | null, error: { msg: string; status: number; } | null } = { data: null, error: null };
 
   if (!/^[a-zA-Z\s]*$/.test(cityName)) {
@@ -81,7 +81,7 @@ export const SearchBox: React.FC<SearchBoxProps> = ({
 
   const fetchSuggestions = async (query: string) => {
     try {
-      const response = await axios.get(`https://2821a45d-7b63-41b5-b019-e0b5d7d55cb3-00-1h5jtkkhjbkvv.pike.replit.dev/suggestions/${query}`);
+      const response = await axios.get(`http://localhost:3000/suggestions/${query}`);
       setSuggestions(response.data.suggestions || []);
     } catch (error) {
       console.error("Error fetching suggestions:", error);
