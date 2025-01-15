@@ -31,7 +31,7 @@ This project is a simple weather application built using Node.js, Express, SQLit
      ```
 
 4. **Prepare the database:**
-   - Ensure the `city.list.json` file is present in the root directory. Otherwise,
+   - Ensure the `cities.db` is present in the  directory. Otherwise,
    - Run the database setup script:
      ```bash
      node cities_db.js
