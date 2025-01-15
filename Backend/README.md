@@ -14,8 +14,8 @@ This project is a simple weather application built using Node.js, Express, SQLit
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository_url>
-   cd <repository_folder>
+   git clone https://github.com/your-repo/weather-app.git
+   cd weather-app/Backend
    ```
 
 2. **Install dependencies:**
@@ -31,7 +31,7 @@ This project is a simple weather application built using Node.js, Express, SQLit
      ```
 
 4. **Prepare the database:**
-   - Ensure the `city.list.json` file is present in the root directory.
+   - Ensure the `city.list.json` file is present in the root directory. Otherwise,
    - Run the database setup script:
      ```bash
      node cities_db.js
