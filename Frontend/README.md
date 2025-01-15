@@ -19,8 +19,8 @@ This is the frontend application for a Weather App that allows users to search f
 
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
-   cd weather-app-frontend
+   git clone https://github.com/your-repo/weather-app.git
+   cd weather-app/Frontend
    ```
 
 2. **Install Dependencies**:
@@ -30,7 +30,7 @@ This is the frontend application for a Weather App that allows users to search f
 
 3. **Start the Application**:
    ```bash
-   npm start
+   npm run dev
    ```
 
 ## Usage
@@ -83,18 +83,6 @@ This is the frontend application for a Weather App that allows users to search f
 }
 ```
 
-## Tailwind CSS Classes
-
-### Search Box
-```css
-w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300
-```
-
-### Weather Card
-```css
-mt-5 p-6 bg-gray-100 border border-gray-300 rounded-lg shadow-lg
-```
-
 ## State Management
 
 ### States in `App.tsx`
@@ -111,17 +99,12 @@ mt-5 p-6 bg-gray-100 border border-gray-300 rounded-lg shadow-lg
 
 ## Running the Application
 1. Start the backend API server at `http://localhost:3000`.
-2. Run the frontend application using `npm start`.
-3. Open the application in the browser at `http://localhost:3000`.
+2. Run the frontend application using `npm run dev`.
+3. Open the application in the browser at `http://localhost:5173`.
 
 ## Future Enhancements
 
 - Add unit tests using Jest and React Testing Library.
-- Improve responsiveness for smaller devices.
 - Integrate a loading spinner for better UX.
-- Enhance error handling for different HTTP status codes.
 
 ---
-
-Enjoy using the Weather App!
-
