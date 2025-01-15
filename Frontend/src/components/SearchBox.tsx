@@ -81,7 +81,7 @@ export const SearchBox: React.FC<SearchBoxProps> = ({
 
   const fetchSuggestions = async (query: string) => {
     try {
-      const response = await axios.get(`http://localhost:3000/suggestions/${query}`);
+      const response = await axios.get(`${url}suggestions/${query}`);
       setSuggestions(response.data.suggestions || []);
     } catch (error) {
       console.error("Error fetching suggestions:", error);
