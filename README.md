@@ -60,7 +60,7 @@ The server is also hosted on Replit for convenience. And the frontend is deploye
    The server will run on `http://localhost:3000/`.
 
 ### Frontend Setup
-1. Navigate to the `client` directory:
+1. Navigate to the `Frontend` directory:
    ```bash
    cd weather-app/Frontend
    ```
