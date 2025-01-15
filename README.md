@@ -42,8 +42,8 @@ The server is hosted on Replit for convenience but can also be initialized local
 3. Initialize the database:
    - Ensure `cities.db` exists with a table named `cities`. Otherwise run the below command
       ```bash
-   node city_db.js
-   ```
+      node city_db.js
+      ```
    - Populate the table with city names (e.g., using a CSV import tool or SQLite commands).
 
 4. Start the server:
