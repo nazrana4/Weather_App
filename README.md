@@ -31,7 +31,7 @@ The server is hosted on Replit for convenience but can also be initialized local
 1. Clone this repository:
    ```bash
    git clone https://github.com/your-repo/weather-app.git
-   cd weather-app/server
+   cd weather-app/Backend
    ```
 
 2. Install dependencies:
@@ -40,7 +40,10 @@ The server is hosted on Replit for convenience but can also be initialized local
    ```
 
 3. Initialize the database:
-   - Ensure `cities.db` exists with a table named `cities`.
+   - Ensure `cities.db` exists with a table named `cities`. Otherwise run the below command
+      ```bash
+   node city_db.js
+   ```
    - Populate the table with city names (e.g., using a CSV import tool or SQLite commands).
 
 4. Start the server:
@@ -53,7 +56,7 @@ The server is hosted on Replit for convenience but can also be initialized local
 ### Frontend Setup
 1. Navigate to the `client` directory:
    ```bash
-   cd ../client
+   cd weather-app/Frontend
    ```
 
 2. Install dependencies:
@@ -63,10 +66,10 @@ The server is hosted on Replit for convenience but can also be initialized local
 
 3. Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
 
-   The frontend will run on `http://localhost:3001/`.
+   The frontend will run on `http://localhost:5173/`.
 
 ---
 
@@ -127,13 +130,10 @@ The server is hosted on Replit for convenience but can also be initialized local
 
 ## Notes about Platform Limitations
 
-1. **Cold Starts**:
-   - If hosted on a serverless platform, the backend may experience latency during initial requests after a period of inactivity.
-
-2. **Rate Limits**:
+1. **Rate Limits**:
    - External weather APIs may impose rate limits, potentially affecting the application during high traffic.
 
-3. **Database Constraints**:
+2. **Database Constraints**:
    - SQLite is not suitable for concurrent high-volume requests; consider migration to a robust database for production use.
 
 ---
