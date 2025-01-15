@@ -38,15 +38,21 @@ The server is also hosted on Replit for convenience. And the frontend is deploye
    ```bash
    npm install
    ```
+3. **Set up environment variables:**
+   - Create a `.env` file in the root directory.
+   - Add your OpenWeatherMap API key:
+     ```
+     API_KEY=your_openweathermap_api_key
+     ```
 
-3. Initialize the database:
+4. Initialize the database:
    - Ensure `cities.db` exists with a table named `cities`. Otherwise run the below command
       ```bash
       node city_db.js
       ```
    - Populate the table with city names (e.g., using a CSV import tool or SQLite commands).
 
-4. Start the server:
+5. Start the server:
    ```bash
    node server.js
    ```
