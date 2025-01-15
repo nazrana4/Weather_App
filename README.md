@@ -15,11 +15,11 @@ The Weather App enables users to:
 
 The backend fetches data from external APIs and interacts with an SQLite database to provide efficient city name suggestions. It handles errors gracefully and supports cross-origin requests for seamless frontend-backend communication.
 
-The server is hosted on Replit for convenience but can also be initialized locally by following the instructions provided in the respective `README.md` files located in both the frontend and backend folders.
+The server is also hosted on Replit for convenience. And the frontend is deployed on netlify. 
 
 ---
 
-## Setup Instructions
+## Setup Instructions (Locally)
 
 ### Prerequisites
 
