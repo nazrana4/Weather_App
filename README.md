@@ -59,6 +59,9 @@ The server is also hosted on Replit for convenience. And the frontend is deploye
 
    The server will run on `http://localhost:3000/`.
 
+Note : 
+If the server is being run on replit, you need to put it's url as the backend url in the frontend code's Searchbox component.
+
 ### Frontend Setup
 1. Navigate to the `Frontend` directory:
    ```bash
