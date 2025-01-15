@@ -148,9 +148,14 @@ The server is also hosted on Replit for convenience. And the frontend is deploye
 - Backend : https://replit.com/@NazranaBagwan/Weather-App-Server
 - Frontend : https://gregarious-buttercream-f484c5.netlify.app/
 
-![image](https://github.com/user-attachments/assets/d191a773-6a1b-4fcf-aa26-9e8b7f2d86bf)
+![image](https://github.com/user-attachments/assets/399e542b-d3ed-4150-90dd-dc7f264bc5a8)
 
-![image](https://github.com/user-attachments/assets/c38fcda6-1a97-4bb8-b93a-f00ea07016c0)
+![image](https://github.com/user-attachments/assets/1932bced-01d7-49c8-bdaf-05ae4a0566a4)
+
+
+
+
+
 
 
 
