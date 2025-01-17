@@ -149,7 +149,7 @@ If the server is being run on replit, you need to put it's url as the backend ur
 
 ### Also the link on the hosted frontend and backend are:
 - Backend : https://replit.com/@NazranaBagwan/Weather-App-Server
-- Frontend : https://nazrana4.github.io/Weather_App/
+- Frontend : https://gregarious-buttercream-f484c5.netlify.app/
 
 ![image](https://github.com/user-attachments/assets/399e542b-d3ed-4150-90dd-dc7f264bc5a8)
 
